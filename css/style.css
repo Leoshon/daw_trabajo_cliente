@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f2f2f2;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: dodgerblue;
+  color: white;
+  margin: auto;
+}
+.logo img {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: auto;
+}
+.header ul {
+  list-style-type: none;
+  display: flex;
+}
+.header ul li {
+  margin: 20px;
+  font-size: 1rem;
+}
+.header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header ul li a:hover {
+  color: #ccc;
+}
+.header ul li:visited {
+  color: limegreen;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: dodgerblue;
+  color: white;
+  position:fixed;
+  bottom:0;
+ 
+  
+
+}
+.footer .footer_logo img {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+.footer .footer_text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.footer .redes img{
+  margin: 10px 10px;
+}
+
+.citas{
+  width: 20rem;
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.citas p{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+.citas p a{
+  text-decoration: none;
+  color: dodgerblue;
+}
+.citas p a:hover{
+  font-size: 2rem;
+}
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 1024px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .citas {
+    margin: 10px;
+  }
+  .footer {
+    visibility: hidden;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+}
