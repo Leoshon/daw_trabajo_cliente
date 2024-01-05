@@ -1,3 +1,33 @@
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: dodgerblue;
+  color: white;
+  position:fixed;
+  bottom:0;
+ 
+  
+
+}
+.footer .footer_logo img {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+.footer .footer_text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.footer .redes img{
+  margin: 10px 10px;
+}
 fieldset {
   border: 1px solid #000;
   border-radius: 10px;
@@ -41,4 +71,47 @@ fieldset {
   font-weight: bold;
   font-size: 0.8rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 1024px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+ 
+  .formulario {
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .formulario legend{
+    font-size: 1rem;
+  }
+  .formulario p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .formulario label{
+    margin: 0 0 10px 0;
+  }
+  .formulario button{
+    width: 100%;
+    margin: 10px auto;
+    background-color: lightblue;
+  }
+  .formulario textarea{
+    width: 100%;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
 }

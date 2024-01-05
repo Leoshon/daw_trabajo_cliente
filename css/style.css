@@ -108,13 +108,13 @@ body {
   (min-device-width: 768px) and (max-device-width: 1024px) {
   .contenedor {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .citas {
-    margin: 10px;
+    margin-top: 60px;
   }
-  .footer {
-    visibility: hidden;
-  }
+
   .header {
     position: sticky;
     top: 0;
